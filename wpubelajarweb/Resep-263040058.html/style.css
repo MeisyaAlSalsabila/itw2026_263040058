@@ -1,0 +1,60 @@
+
+/* Pengaturan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #333;
+    margin: 30px;
+    line-height: 1.6;
+}
+
+/* Judul utama */
+h1 {
+    text-align: center;
+    color: #b34719;
+}
+
+/* Judul bagian */
+h2, h3 {
+    color: #b34719;
+}
+
+/* Gambar nasi goreng */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Garis pemisah */
+hr {
+    border: none;
+    border-top: 1px solid #e0c7b5;
+    margin: 25px 0;
+}
+
+/* Daftar bahan dan langkah */
+li {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/* Informasi porsi dan waktu */
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Paragraf */
+p {
+    text-align: justify;
+}
+
+/* Efek saat kursor diarahkan ke gambar */
+img:hover {
+    opacity: 0.9;
+}
