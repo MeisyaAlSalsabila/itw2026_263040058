@@ -7,20 +7,41 @@
 
     <h1>Contoh Input Atribut, Checkbox & Radio</h1>
 <form> 
-    <label for="name">Nama:</label>
+    <label for="name">Nama:
     <input type="text" id="name" name="name" 
     placeholder="Masukkan Nama" autocomplete="off"
     autofocus required> 
-<label>
+    </label>
 <br>
 
 <h3>Hobby :</h3>
 <label for="hobby1">
-    <input type="checkbox" id="hobby1" name="hobby1" value="olahraga"> Olahraga
+    <input type="checkbox" id="hobby1" name="hobby1" 
+    value="olahraga">
+    Olahraga
 </label>
 <br>
 
+<label for="hobby2">
+    <input type="checkbox" id="hobby2" name="hobby2" 
+    value="baca buku">
+    Baca Buku
+</label>
+<br>
+<h3>Jenis Kelamin :</h3>
+<label for="gender1">
+    <input type="radio" id="gender1" name="gender" 
+    value="laki-laki" checked>
+    Laki-laki
+</label>
+<br>
+<label for="gender2">
+    <input type="radio" id="gender2" name="gender" 
+    value="perempuan">
+    Perempuan
+</label>
 
+<br>
 <button type="submit">Kirim!</button>
 
 </form>
