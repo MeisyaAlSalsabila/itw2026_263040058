@@ -23,15 +23,16 @@ h1, h2, h3 {
 }
 
 header {
-    background-color: #FAF9F6;
-    color: #87927B;
-    padding: 40px 20px ;
+    background-color: #20372B;
+    color: #F4F0E6;
+    padding: 45px 20px ;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 header .genre-tags {
@@ -40,12 +41,13 @@ header .genre-tags {
 
 header .genre-tags .tag {
     display: inline-block;
-    background-color: #0891B2;
-    color: #FAF9F6;
-    padding: 6px 16px;
+    background-color: #D6A84F;
+    color: #20372B;
+    padding: 7px 17px;
     margin: 0 5px;
     border-radius: 20px;
     font-size: 0.9em;
+    font-weight: 600;
 }
 
 main {
@@ -55,29 +57,34 @@ main {
 }
 
 main .profile-card {
-    background-color: #FFFCF6;
+    background-color: #FFFCF5;
     padding: 40px;
     margin: 30px 0;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0 0 0 / 0.1);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(32, 55, 43, 0.10);
     text-align: center;
 }
 
 main .profile-card .Artis {
-    width: 200px;
-    height: 200px;
+    object-fit: fill ;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
-    border: 5px solid #0891B2;
+    border:  5px solid #D6A84F;
+    box-shadow: 0 5px 15px rgba(32, 55, 43, 0.15);
     margin-bottom: 20px;
 }
 
 main .profile-card .bio {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 main .profile-card .bio p {
     margin-bottom: 15px;
+    color: #4D574F;
+    font-size: 0.96em;
+    line-height: 1,8;
 }
 
 main .profile-card .stats {
@@ -87,33 +94,35 @@ main .profile-card .stats {
 main .profile-card .stats .stat-item {
     display: inline-block;
     width: 150px;
-    padding: 20px;
-    background-color: #F5F5F5;
+    padding: 20px ;
+    background-color: #F4F0E6;
     margin: 10px 20px;
     border-radius: 10px;
-    border: 2px solid #06B6D4;
+    border: 2px solid #D9CBAF;
+  
 }
 
 main .profile-card .stats .stat-item .stat-value {
     font-size: 2em;
     font-weight: bold;
-    color: #0891B2;
+    color: #315C43;
 }
 
 main .profile-card .stats .stat-item .stat-label {
     font-size: 0.9em;
-    color: #292929;
+    color: #59645B;
 }
 
 main .discography {
     margin: 50px 0;
 }
 
-main .discography  h2
+main .discography  h2,
 main .social-links h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 30px;
+    color: #20372B;
 }
 
 main .discography .album-list {
@@ -125,72 +134,93 @@ main .discography .album-list .album-card {
     width: 200px;
     margin: 15px;
     padding: 15px;
-    background-color: #F5F5F5;
-    border-radius: 10px ;
-    box-shadow: 0 2px 8px rgba(0 0 0 / 0.1);
+    background-color: #FFFCF5;
+    border-radius: 11px ;
+    box-shadow:  0 4px 12px rgba(32, 55, 43, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
+
+main .discography .album-list .album-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 22px rgba(32, 55, 43, 0.17);
+}
+
+main .discography .album-list .album-card:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(32, 55, 43, 0.12);
+}
+
 
 main .discography .album-list .album-card img { 
     width: 150px;
-    height: 150px;
+    height: 160px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 main .discography .album-list .album-card h3 {
     font-size: 1.1em;
+    color: #20372B;
     margin-bottom: 15px;
 }
 
 main .discography .album-list .album-card p {
     font-size: 0.9em;
-    color: #0e4c72;
+    color: #7B6A4D;
     margin-bottom: 15px;
 }
 
 main .discography .album-list .album-card .btn-listen {
     display: inline-block;
-    background-color: #0f3339;
-    color: #F5F5F5;
+    background-color: #315C43;
+    color: #FFFCF5;
     padding: 8px 20px;
     font-size: 0.9em;
     border-radius: 19px;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 main .discography .album-list .album-card .btn-listen:hover {
-    background-color: #0891B2;
+   background-color: #D6A84F;
+    color: #20372B;
+    transform: scale(1.05);
 
 }
 
 main .social-links {
     text-align: center;
     padding: 40px 20px ;
-    background-color: #FAF9F6;
+    background-color: #FFFCF5;
     border-radius: 12px;
+     box-shadow: 0 5px 15px rgba(32, 55, 43, 0.07);
     margin: 30px 0;
 }
 
 main .social-links .social-btn{
     display: inline-block;
-    background-color: #292929;
-    color: #F5F5F5;
+    background-color: #315C43;
+    color: #FFFCF5;
     padding: 12px 30px;
     margin: 10px;
     border-radius: 25px ;
     text-decoration: none;
     font-weight: bold;   
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 main .social-links .social-btn:hover {
-    background-color: #333;   
+    background-color: #D6A84F;   
+    color: #20372B;
+    transform: translateY(-3px);
 }
 
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #0f3339;
-    color: #F5F5F5;
+    background-color: #20372B;
+    color: #F4F0E6;
     margin-top: 50px;
 }
 
