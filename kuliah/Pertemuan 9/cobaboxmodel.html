@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba BOX-MODEL</title>
+    <style>
+        .kotak1 {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            color: aliceblue;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .kotak2 {
+            width: 150px;
+            height: 150px;
+            background-color: palevioletred;
+            color: aliceblue;
+            text-align: center;
+            /* margin-left: -100px; */
+            transition: 1s;
+            transform-origin: bottom right;
+            padding: 15px;
+            border: 5px solid rgb(42, 7, 214);
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px rgb(0, 64, 128);
+        }
+
+        .kotak2:hover{
+            margin-left: 0;
+            transform: skew(15deg);
+            /* transform: rotate(180deg)*/
+        } 
+
+    </style>
+</head>
+
+
+<body>
+    <div class="kotak1">Kotak 1</div>
+    <div class="kotak2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odio?</div>
+</body>
+
+</html>
